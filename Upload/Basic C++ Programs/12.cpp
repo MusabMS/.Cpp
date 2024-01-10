@@ -22,9 +22,8 @@ int main() {
     r = r/100, r += 1;
     for(int i=1; i<=t; i++){
         CI *= r;}
-    CI = ((p * CI) - p);
-    cout << CI;
+    CI = p*CI;
+    cout << CI-p;
 
     return 0;
 }
-
