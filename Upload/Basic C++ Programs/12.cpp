@@ -6,8 +6,8 @@ using namespace std;
 int main() {
     double p = 1000, r = 10, t = 2, CI;
     r = r/100;
-    CI = (p * std::pow(1 + r, t) - p);
-    cout << CI;
+    CI = p * std::pow(1 + r, t);
+    cout << CI - p;
 
     return 0;
 }
@@ -22,8 +22,8 @@ int main() {
     r = r/100, r += 1;
     for(int i=1; i<=t; i++){
         CI *= r;}
-    CI = p*CI;
-    cout << CI-p;
+    CI = p * CI;
+    cout << CI - p;
 
     return 0;
 }
